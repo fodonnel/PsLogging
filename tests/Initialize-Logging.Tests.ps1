@@ -33,7 +33,7 @@ Describe Initialize-Logging {
         It "should set the the console log file" {
             Assert-MockCalled Set-LogConfigFilePath -Exactly 1
             Assert-MockCalled Set-LogConfigFilePath -ParameterFilter { 
-                $FilePath.Endswith("console.nlog") 
+                $FilePath.Endswith("console.nlog")
             }
         }
     }
