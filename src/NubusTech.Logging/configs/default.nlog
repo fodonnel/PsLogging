@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<nlog xmlns="http://www.nlog-project.org/schemas/NLog.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <targets>
+    <target name="logfile" xsi:type="File"
+           layout="${longdate} [${level}] ${logger} ${message}"
+           fileName="${gdc:item=LogDirectory}/${gdc:item=FileName}"
+           archiveFileName="${gdc:item=LogDirectory}/${gdc:item=FileName}.{#}"
+           archiveEvery="Day"
+           archiveNumbering="Rolling"
+           maxArchiveFiles="7" />
+
+    <target name="console" xsi:type="ColoredConsole" 
+            layout="${longdate} [${level}] ${logger} ${message}"
+            useDefaultRowHighlightingRules="true"
+            detectConsoleAvailable="false">
+    </target>
+  </targets>
+
+  <rules>
+    <logger name="*" minlevel="Debug" writeTo="console" />
+    <logger name="*" minlevel="Debug" writeTo="logfile" />
+  </rules>
+</nlog>

@@ -1,4 +1,4 @@
-function Write-LogInfo {
+function Write-LogError {
     param (
         [Parameter(Mandatory = $true, Position = 0)]
         [string] $Message,
@@ -8,7 +8,7 @@ function Write-LogInfo {
     )
 
     $params = @{
-        Level      = "Info"
+        Level      = "Error"
         LoggerName = $(Get-PSCallStack)[1].Command
         Message    = (Format-LogMessage -Message $Message -Error $Error)
     }

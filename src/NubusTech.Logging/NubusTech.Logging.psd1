@@ -54,7 +54,9 @@ Copyright = '(c) 2017 NusbusTech. All rights reserved.'
 # RequiredModules = @()
 
 # Assemblies that must be loaded prior to importing this module
-# RequiredAssemblies = @()
+# RequiredAssemblies = @(
+#     'NLog'
+# )
 
 # Script files (.ps1) that are run in the caller's environment prior to importing this module.
 # ScriptsToProcess = @()
@@ -69,7 +71,15 @@ Copyright = '(c) 2017 NusbusTech. All rights reserved.'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = @()
+FunctionsToExport = @(
+    'Initialize-Logging',
+    'Write-LogTrace',
+    'Write-LogDebug',
+    'Write-LogInfo',
+    'Write-LogWarn',
+    'Write-LogError',
+    'Write-LogFatal'
+)
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()
