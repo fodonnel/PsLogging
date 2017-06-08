@@ -1,3 +1,21 @@
+<#
+.SYNOPSIS
+Writes the diagnostic message at the Info level
+
+.DESCRIPTION
+Long description
+
+.PARAMETER Message
+The message to be written
+
+.PARAMETER Error
+An optional ErrorRecord to be written with the message
+
+.EXAMPLE
+Write-LogInfo "Test Message"
+Writes a Info diagnostic message
+
+#>
 function Write-LogInfo {
     param (
         [Parameter(Mandatory = $true, Position = 0)]

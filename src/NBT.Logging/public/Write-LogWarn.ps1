@@ -1,3 +1,21 @@
+<#
+.SYNOPSIS
+Writes the diagnostic message at the Warn level
+
+.DESCRIPTION
+Long description
+
+.PARAMETER Message
+The message to be written
+
+.PARAMETER Error
+An optional ErrorRecord to be written with the message
+
+.EXAMPLE
+Write-LogWarn "Test Message"
+Writes a Warn diagnostic message
+
+#>
 function Write-LogWarn {
     param (
         [Parameter(Mandatory = $true, Position = 0)]

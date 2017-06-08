@@ -1,3 +1,26 @@
+<#
+.SYNOPSIS
+Initialize the Logging
+
+.DESCRIPTION
+Initialize the Logging
+
+.PARAMETER FileName
+The filename to use for logging messages
+
+.PARAMETER LogDirectory
+The directory to use for logging messages
+
+.PARAMETER ConsoleOnly
+Should logging only write to the console
+
+.PARAMETER ConfigFile
+The ConfigFile to use for custom logging
+
+.PARAMETER Parameters
+Parameters to use for custom logging
+
+#>
 function Initialize-Logging {
     param (
         [Parameter(Mandatory = $true, ParameterSetName = "DefaultConfigFile")]
