@@ -1,4 +1,4 @@
-Add-Type -path "$PSScriptRoot/packages/NLog.4.4.10/lib/net40/NLog.dll" -PassThru -ErrorAction Stop | Out-Null
+Add-Type -path "$PSScriptRoot/libs/NLog.dll" -PassThru -ErrorAction Stop | Out-Null
 
 . $PSScriptRoot\private\Format-LogMessage.ps1
 . $PSScriptRoot\private\Set-LogConfigFilePath.ps1
