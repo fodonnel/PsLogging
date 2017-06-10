@@ -1,4 +1,4 @@
-. "$PSScriptRoot\..\src\NBT.Logging\private\Format-LogMessage.ps1"
+. "$PSScriptRoot\..\src\NubusTech.Logging\private\Format-LogMessage.ps1"
 
 Describe Format-LogMessage {
     Context "Format an message" {

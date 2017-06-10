@@ -13,7 +13,7 @@ Task("Install-Packages").Does(() => {
 
   CopyFile(
     @"packages\NLog.4.4.10\lib\net45\nlog.dll", 
-    @"src\NBT.Logging\libs\nlog.dll");
+    @"src\NubusTech.Logging\libs\nlog.dll");
 });
 
 

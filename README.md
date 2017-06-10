@@ -1,1 +1,1 @@
-# NBT.Logging
+# NubusTech.Logging
