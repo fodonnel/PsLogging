@@ -1,6 +1,6 @@
-. "$PSScriptRoot\..\src\NubusTech.Logging\private\Set-LogConfigParameter.ps1"
-. "$PSScriptRoot\..\src\NubusTech.Logging\private\Set-LogConfigFilePath.ps1"
-. "$PSScriptRoot\..\src\NubusTech.Logging\public\Initialize-Logging.ps1"
+. "$PSScriptRoot\..\src\PsLogging\private\Set-LogConfigParameter.ps1"
+. "$PSScriptRoot\..\src\PsLogging\private\Set-LogConfigFilePath.ps1"
+. "$PSScriptRoot\..\src\PsLogging\public\Initialize-Logging.ps1"
 
 Describe Initialize-Logging {
     Mock Set-LogConfigParameter

@@ -1,6 +1,6 @@
-. "$PSScriptRoot\..\src\NubusTech.Logging\private\Write-LogMessage.ps1"
-. "$PSScriptRoot\..\src\NubusTech.Logging\private\Format-LogMessage.ps1"
-. "$PSScriptRoot\..\src\NubusTech.Logging\public\Write-LogWarn.ps1"
+. "$PSScriptRoot\..\src\PsLogging\private\Write-LogMessage.ps1"
+. "$PSScriptRoot\..\src\PsLogging\private\Format-LogMessage.ps1"
+. "$PSScriptRoot\..\src\PsLogging\public\Write-LogWarn.ps1"
 
 Describe Write-LogWarn {
     Mock Get-PSCallStack -MockWith { @(@{ Command = "current" }; @{ Command = "caller"}) }
